@@ -60,6 +60,7 @@ describe ("Grading Tests: ", function () {
    it("HTML includes HTML entities", function() {
       // Regex pattern: /(&.+;)/ig
       const regex = /(&.+;)/ig;
+      console.log(regex);
       expect(html.search(regex)).not.toEqual(-1);
    })
 });
